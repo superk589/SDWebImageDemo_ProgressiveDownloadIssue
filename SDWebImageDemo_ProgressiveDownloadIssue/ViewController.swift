@@ -7,9 +7,17 @@
 //
 
 import UIKit
+import SDWebImage
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView! {
+        didSet {
+            imageView.sd_setImage(with: URL.init(string: "https://hoshimoriuta.kirara.ca/spread/100223.png")!, placeholderImage: nil, options: SDWebImageOptions.progressiveDownload)
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
