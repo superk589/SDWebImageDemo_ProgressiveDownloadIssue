@@ -13,7 +13,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView! {
         didSet {
-            imageView.sd_setImage(with: URL.init(string: "https://hoshimoriuta.kirara.ca/spread/100223.png")!, placeholderImage: nil, options: SDWebImageOptions.progressiveDownload)
+            imageView.sd_setImage(with: URL.init(string: "https://hoshimoriuta.kirara.ca/spread/100224.png")!, placeholderImage: nil, options: SDWebImageOptions.progressiveDownload)
         }
     }
     
